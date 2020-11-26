@@ -1,1 +1,11 @@
-{}
+{
+    "baseUrl": "",
+    "chromeWebSecurity": false,
+    "testFiles": "**/**/*.feature",
+    "supportFile": "cypress/support/index.ts",
+    "reporter": "junit",
+    "screenshotsFolder": "tests-output/screenshots",
+    "reporterOptions": {
+        "mochaFile": "tests-output/results/TEST-[hash].xml"
+    }
+}
