@@ -1,7 +1,8 @@
 {
-    "baseUrl": "",
+    "baseUrl": "http://localhost:3000",
     "chromeWebSecurity": false,
-    "testFiles": "**/**/*.feature",
+    "video": false,
+    "testFiles": "**/**/**.ts",
     "supportFile": "cypress/support/index.ts",
     "reporter": "junit",
     "screenshotsFolder": "tests-output/screenshots",
