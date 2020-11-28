@@ -2,6 +2,7 @@ describe("Specific Date Foreign Exchange Rates", () => {
   const pastDate = "2020-10-30";
   const ratesApiBaseUrl = `https://api.ratesapi.io/api/${pastDate}`;
   const baseCurrencyUSD = "USD";
+  const baseCurrencyEUR = "EUR";
   const symbols = "USD,GBP";
 
   describe("Specific date foreign exchange rates with symbols", () => {
@@ -13,7 +14,7 @@ describe("Specific Date Foreign Exchange Rates", () => {
         },
       }).then((response) => {
         expect(response.status).to.eq(200);
-        expect(response.body).to.have.property("base", "EUR");
+        expect(response.body).to.have.property("base", baseCurrencyEUR);
         expect(response.body).to.have.property("date", pastDate);
         expect(response.body)
           .to.have.property("rates")
@@ -34,7 +35,7 @@ describe("Specific Date Foreign Exchange Rates", () => {
         },
       }).then((response) => {
         expect(response.status).to.eq(200);
-        expect(response.body).to.have.property("base", "USD");
+        expect(response.body).to.have.property("base", baseCurrencyUSD);
         expect(response.body).to.have.property("date", pastDate);
       });
     });
@@ -50,7 +51,13 @@ describe("Specific Date Foreign Exchange Rates", () => {
         },
       }).then((response) => {
         expect(response.status).to.eq(200);
-        expect(response.body).to.have.property("base", "USD");
+        expect(response.body).to.have.property("base", baseCurrencyUSD);
+        expect(response.body)
+          .to.have.property("rates")
+          .to.have.deep.property("USD");
+        expect(response.body)
+          .to.have.property("rates")
+          .to.have.deep.property("GBP");
         expect(response.body).to.have.property("date", pastDate);
       });
     });

@@ -2,6 +2,7 @@ describe("Latest Foreign Exchange Rates", () => {
   const ratesApiBaseUrl = "https://api.ratesapi.io/api/latest";
   const todaysDate = Cypress.moment().format("YYYY-MM-DD");
   const baseCurrencyUSD = "USD";
+  const baseCurrencyEUR = "EUR";
   const symbols = "USD,GBP";
 
   describe("Latest foreign exchange rates with symbols", () => {
@@ -13,7 +14,7 @@ describe("Latest Foreign Exchange Rates", () => {
         },
       }).then((response) => {
         expect(response.status).to.eq(200);
-        expect(response.body).to.have.property("base", "EUR");
+        expect(response.body).to.have.property("base", baseCurrencyEUR);
         expect(response.body)
           .to.have.property("rates")
           .to.have.deep.property("USD");
@@ -34,7 +35,7 @@ describe("Latest Foreign Exchange Rates", () => {
         },
       }).then((response) => {
         expect(response.status).to.eq(200);
-        expect(response.body).to.have.property("base", "USD");
+        expect(response.body).to.have.property("base", baseCurrencyUSD);
         expect(response.body).to.have.property("date", todaysDate);
       });
     });
@@ -50,7 +51,7 @@ describe("Latest Foreign Exchange Rates", () => {
         },
       }).then((response) => {
         expect(response.status).to.eq(200);
-        expect(response.body).to.have.property("base", "USD");
+        expect(response.body).to.have.property("base", baseCurrencyUSD);
         expect(response.body)
           .to.have.property("rates")
           .to.have.deep.property("USD");
