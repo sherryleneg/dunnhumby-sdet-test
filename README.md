@@ -4,7 +4,11 @@
 This test repository contains tests for the Exchange Rates API(http://ratesapi.io/documentation/) and UI tests for the Snipcart shopping cart app (https://snipcart.com/). 
 
 ## Running the tests locally
+
 You can run the code base using an IDE like Visual Studio Code.
+
+Clone the repository via HTTPS 
+https://github.com/sherryleneg/dunnhumby-sdet-test.git
 
 To run these tests on your machine you will need to open the command line and make sure you are in the project directory(dunnhumby-sdet-test)
 
