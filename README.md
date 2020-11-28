@@ -57,11 +57,11 @@ The date assertion for the API tests will fail when the latest exchange rate tes
 
 ## Future improvements
 
- - Use of Docker to containerize the tests
+ - Use of Docker to containerise the tests
  
  - Use of fixture files to pass on data to API tests
  
- - Create two separate cypress.json files for the UI and the AP tests
+ - Create two separate cypress.json files for the UI and API tests
  
  - Tagging the tests with test tags
  
@@ -69,7 +69,7 @@ The date assertion for the API tests will fail when the latest exchange rate tes
  
  ## Comments
  
-I decided to make some practical decisions wherever possible. I am aware that the project could be improved, however I decided to time box myself whenever I encountered an issue and made some priority calls. The API tests were fairly straightforward but the UI tests presented some challenges. I have left comments on the UI tests because I felt they needed to be explained in more detail. For the API tests I did not leave comments as I felt that the tests are self explanatory.
+I decided to make some practical decisions wherever possible. I am aware that the project could be improved, however I decided to time box myself whenever I encountered an issue and made some priority calls. The API tests were fairly straightforward but the UI tests presented some challenges. I have left comments on the UI tests because I felt they needed to be explained in detail.
  
  
  
