@@ -54,6 +54,7 @@ The date assertion for the API tests will fail when the latest exchange rate tes
 
 - API requests in the tests do not require authentication
 
+- Symbols query parameter is a string value
 
 ## Future improvements
 
