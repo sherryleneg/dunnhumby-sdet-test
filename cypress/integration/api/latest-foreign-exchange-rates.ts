@@ -3,10 +3,10 @@ describe("Latest Foreign Exchange Rates", () => {
   const todaysDate = Cypress.moment().format("YYYY-MM-DD");
   const baseCurrencyUSD = "USD";
   const baseCurrencyEUR = "EUR";
-  const symbols = "USD,GBP";
+  const symbols = "AUD,GBP";
 
   describe("Latest foreign exchange rates with symbols", () => {
-    it("should return today's USD and GBP rates against the default base rate EUR", () => {
+    it("should return today's AUD and GBP rates against the default base rate EUR", () => {
       cy.request({
         url: ratesApiBaseUrl,
         qs: {
@@ -17,10 +17,14 @@ describe("Latest Foreign Exchange Rates", () => {
         expect(response.body).to.have.property("base", baseCurrencyEUR);
         expect(response.body)
           .to.have.property("rates")
-          .to.have.deep.property("USD");
+          .to.have.deep.property("AUD");
         expect(response.body)
           .to.have.property("rates")
           .to.have.deep.property("GBP");
+
+        //I believe these rates are updated at a specific time during the day hence
+        //this assertion won't always pass. For example: I ran the tests this morning
+        // at 9am and it was sending back data from last Friday.
         expect(response.body).to.have.property("date", todaysDate);
       });
     });
@@ -36,13 +40,17 @@ describe("Latest Foreign Exchange Rates", () => {
       }).then((response) => {
         expect(response.status).to.eq(200);
         expect(response.body).to.have.property("base", baseCurrencyUSD);
+
+        //I believe these rates are updated at a specific time during the day hence
+        //this assertion won't always pass. For example: I ran the tests this morning
+        // at 9am and it was sending back data from last Friday.
         expect(response.body).to.have.property("date", todaysDate);
       });
     });
   });
 
   describe("Latest foreign exchange rates with base and symbols", () => {
-    it("should return today's rates against base rate USD", () => {
+    it("should return today's rates for GBP and AUD against base rate USD", () => {
       cy.request({
         url: ratesApiBaseUrl,
         qs: {
@@ -54,10 +62,14 @@ describe("Latest Foreign Exchange Rates", () => {
         expect(response.body).to.have.property("base", baseCurrencyUSD);
         expect(response.body)
           .to.have.property("rates")
-          .to.have.deep.property("USD");
+          .to.have.deep.property("AUD");
         expect(response.body)
           .to.have.property("rates")
           .to.have.deep.property("GBP");
+
+        //I believe these rates are updated at a specific time during the day hence
+        //this assertion won't always pass. For example: I ran the tests this morning
+        // at 9am and it was sending back data from last Friday.
         expect(response.body).to.have.property("date", todaysDate);
       });
     });

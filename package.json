@@ -2,7 +2,7 @@
   "scripts": {
     "cy:open": "cypress open",
     "cy:e2e": "./node_modules/.bin/cypress run --spec \"cypress/integration/ui/*\" --browser chrome --headless",
-    "cy:api": "./node_modules/.bin/cypress run --spec \"cypress/integration/api/*'\" --browser chrome --headless",
+    "cy:api": "./node_modules/.bin/cypress run --spec \"cypress/integration/api/*\" --browser chrome --headless",
     "cy:all": "./node_modules/.bin/cypress run --browser chrome --headless",
     "cy:lint": "prettier --check '**/*.ts' && eslint . --ext .ts",
     "cy:format": "prettier --write '**/*.ts'"

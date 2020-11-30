@@ -1,3 +1,2 @@
 node_modules
-tests-output
-cypress/screenshots/
+tests-output/screenshots/

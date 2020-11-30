@@ -6,6 +6,6 @@
     "reporter": "junit",
     "screenshotsFolder": "tests-output/screenshots",
     "reporterOptions": {
-        "mochaFile": "tests-output/results/TEST-[hash].xml"
+        "mochaFile": "tests-output/results/TESTREPORT-[hash].xml"
     }
 }
