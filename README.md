@@ -5,7 +5,11 @@ This test repository contains tests for the Exchange Rates API(http://ratesapi.i
 
 ## Running the tests locally
 
-You can run the code base using an IDE like Visual Studio Code.
+You can run the codebase using an IDE like Visual Studio Code.
+
+Make sure you have node.js installed https://nodejs.org/en/
+
+Run ```npm i``` to install all project dependencies.
 
 Clone the repository via HTTPS 
 https://github.com/sherryleneg/dunnhumby-sdet-test.git
@@ -52,7 +56,10 @@ Cypress have an ongoing issue open to hopefully resolve it: https://github.com/c
 
 ## API Tests
 
-The date assertion for the API tests will fail when the latest exchange rate tests are run during the weekend. This is because the exchange rate for the Rates API seem to be updated only from Monday - Friday. I believe this is a limitation of the Rates API and I decided not to overcomplicate the date logic.
+The date assertion for the API tests will fail at times. When I ran the tests during the weekend, the latest
+forex date available was from Friday (although I read onine that the forex rates are updated in real time the whole week https://www.x-rates.com/faq/#:~:text=How%20often%20are%20the%20rates,little%20trading%20to%20be%20reported.). I reran the tests again on a Monday and the exchange rate was updated 
+at the end of the day. I believe this behaviour presents some limitations of the API service,
+which is unrelated to the tests. 
 
 ## Assumptions
 
@@ -64,7 +71,7 @@ The date assertion for the API tests will fail when the latest exchange rate tes
 
  - Use of Docker to containerise the tests
  
- - Use of fixture files to pass on data to API tests
+ - Use of fixture files to pass data to the API tests
  
  - Create two separate cypress.json files for the UI and API tests
  
