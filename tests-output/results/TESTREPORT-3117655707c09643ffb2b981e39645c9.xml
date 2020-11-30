@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.24800000000000003" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2020-11-30T18:35:21" tests="0" file="cypress/integration/api/latest-foreign-exchange-rates.ts" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Latest Foreign Exchange Rates" timestamp="2020-11-30T18:35:21" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Latest foreign exchange rates with symbols" timestamp="2020-11-30T18:35:21" tests="1" failures="0" time="0.14">
+    <testcase name="Latest Foreign Exchange Rates Latest foreign exchange rates with symbols should return today&apos;s AUD and GBP rates against the default base rate EUR" time="0.14" classname="should return today&apos;s AUD and GBP rates against the default base rate EUR">
+    </testcase>
+  </testsuite>
+  <testsuite name="Latest foreign exchange rates with base" timestamp="2020-11-30T18:35:21" tests="1" failures="0" time="0.042">
+    <testcase name="Latest Foreign Exchange Rates Latest foreign exchange rates with base should return today&apos;s rates against base rate USD" time="0.042" classname="should return today&apos;s rates against base rate USD">
+    </testcase>
+  </testsuite>
+  <testsuite name="Latest foreign exchange rates with base and symbols" timestamp="2020-11-30T18:35:21" tests="1" failures="0" time="0.066">
+    <testcase name="Latest Foreign Exchange Rates Latest foreign exchange rates with base and symbols should return today&apos;s rates for GBP and AUD against base rate USD" time="0.066" classname="should return today&apos;s rates for GBP and AUD against base rate USD">
+    </testcase>
+  </testsuite>
+</testsuites>

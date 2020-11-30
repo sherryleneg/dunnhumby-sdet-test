@@ -21,10 +21,6 @@ describe("Latest Foreign Exchange Rates", () => {
         expect(response.body)
           .to.have.property("rates")
           .to.have.deep.property("GBP");
-
-        //I believe these rates are updated at a specific time during the day hence
-        //this assertion won't always pass. For example: I ran the tests this morning
-        // at 9am and it was sending back data from last Friday.
         expect(response.body).to.have.property("date", todaysDate);
       });
     });
@@ -40,10 +36,6 @@ describe("Latest Foreign Exchange Rates", () => {
       }).then((response) => {
         expect(response.status).to.eq(200);
         expect(response.body).to.have.property("base", baseCurrencyUSD);
-
-        //I believe these rates are updated at a specific time during the day hence
-        //this assertion won't always pass. For example: I ran the tests this morning
-        // at 9am and it was sending back data from last Friday.
         expect(response.body).to.have.property("date", todaysDate);
       });
     });
@@ -66,10 +58,6 @@ describe("Latest Foreign Exchange Rates", () => {
         expect(response.body)
           .to.have.property("rates")
           .to.have.deep.property("GBP");
-
-        //I believe these rates are updated at a specific time during the day hence
-        //this assertion won't always pass. For example: I ran the tests this morning
-        // at 9am and it was sending back data from last Friday.
         expect(response.body).to.have.property("date", todaysDate);
       });
     });
