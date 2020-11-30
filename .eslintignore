@@ -1,0 +1,6 @@
+# Generated folders
+**/**/node_modules/
+commands.js
+*/**/package-lock.json
+cypress/screenshots
+cypress/videos

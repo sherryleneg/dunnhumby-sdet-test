@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.22799999999999998" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2020-11-30T18:35:22" tests="0" file="cypress/integration/api/specific-date-foreign-exchange-rates.ts" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Specific Date Foreign Exchange Rates" timestamp="2020-11-30T18:35:22" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Specific date foreign exchange rates with symbols" timestamp="2020-11-30T18:35:22" tests="1" failures="0" time="0.063">
+    <testcase name="Specific Date Foreign Exchange Rates Specific date foreign exchange rates with symbols should return AUD and GBP rates for a past date against the default base rate EUR" time="0.063" classname="should return AUD and GBP rates for a past date against the default base rate EUR">
+    </testcase>
+  </testsuite>
+  <testsuite name="Specific date foreign exchange rates with base" timestamp="2020-11-30T18:35:22" tests="1" failures="0" time="0.044">
+    <testcase name="Specific Date Foreign Exchange Rates Specific date foreign exchange rates with base should return rates against base rate USD for a past date" time="0.044" classname="should return rates against base rate USD for a past date">
+    </testcase>
+  </testsuite>
+  <testsuite name="Specific date foreign exchange rates with base and symbols" timestamp="2020-11-30T18:35:22" tests="1" failures="0" time="0.121">
+    <testcase name="Specific Date Foreign Exchange Rates Specific date foreign exchange rates with base and symbols should return today&apos;s rates for GBP and AUD base rate USD for a past date" time="0.121" classname="should return today&apos;s rates for GBP and AUD base rate USD for a past date">
+    </testcase>
+  </testsuite>
+</testsuites>

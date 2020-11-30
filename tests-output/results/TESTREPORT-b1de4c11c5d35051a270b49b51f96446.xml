@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.496" tests="2" failures="1">
+  <testsuite name="Root Suite" timestamp="2020-11-30T18:35:23" tests="0" file="cypress/integration/ui/e2e.ts" failures="0" time="0">
+  </testsuite>
+  <testsuite name="E2E tests" timestamp="2020-11-30T18:35:23" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Scenario 1" timestamp="2020-11-30T18:35:23" tests="1" failures="0" time="0.496">
+    <testcase name="E2E tests Scenario 1 should verify the dropdown options, buy button and the relative url " time="0.496" classname="should verify the dropdown options, buy button and the relative url ">
+    </testcase>
+  </testsuite>
+  <testsuite name="Scenario 2" timestamp="2020-11-30T18:35:25" tests="1" failures="1" time="0">
+    <testcase name="E2E tests Scenario 2 should verify the checkout journey" time="0" classname="should verify the checkout journey">
+      <failure message="Timed out retrying: Expected to find element: `[id=&quot;snipcart_custom_Color&quot;]`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying: Expected to find element: `[id="snipcart_custom_Color"]`, but never found it.
+    at Context.eval (https://snipcart-react-gatsby.netlify.app/__cypress/tests?p=cypress/integration/ui/e2e.ts:165:12)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
