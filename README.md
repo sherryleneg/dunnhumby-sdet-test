@@ -1,4 +1,4 @@
-# dunnhumby-sdet-test
+# test-challenge-sdet
 
 ## Introduction
 This test repository contains tests for the Exchange Rates API(http://ratesapi.io/documentation/) and UI tests for the Snipcart shopping cart app (https://snipcart.com/). 
@@ -12,9 +12,9 @@ Make sure you have node.js installed https://nodejs.org/en/
 Run ```npm i``` to install all project dependencies.
 
 Clone the repository via HTTPS 
-https://github.com/sherryleneg/dunnhumby-sdet-test.git
+https://github.com/sherryleneg/test-challenge-sdet.git
 
-To run these tests on your machine you will need to open the command line and make sure you are in the project directory(dunnhumby-sdet-test)
+To run these tests on your machine you will need to open the command line and make sure you are in the project directory
 
 The tests will run headless on Chrome browser by default.
 
